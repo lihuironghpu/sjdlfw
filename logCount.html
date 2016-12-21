@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据代理服务</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <!--日志审计页面-->
+    <!--左侧菜单区域-->
+    <div id="leftMenu" class="left_container"></div>
+    <!--右侧头部和内容显示区域-->
+    <div class="right_container">
+        <!--头部用户名退出区域-->
+        <div id="header" class="header"></div>
+        <!--内容显示区域-->
+        <div class="main_container">
+            <!--路径导航-->
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Library</a></li>
+                <li class="active">Data</li>
+            </ol>
+            <!--设置按钮-->
+            <div>
+                <a class="btn btn_primary">设置</a>
+            </div>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+                <li class="active"><a>操作日志</a></li>
+                <li><a>过滤日志</a></li>
+                <li><a>流量日志</a></li>
+                <li><a>规则命中日志</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <!--操作日志tab内容-->
+                <div class="tab-pane">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>类型</th>
+                            <th>详细描述</th>
+                            <th>日期</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>操作日志1</td>
+                            <td>trace</td>
+                            <td>操作日志的详细描述，如果出现多文字可以进行换行显示</td>
+                            <td>2016/09/11  13:11:22</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--过滤日志tab内容-->
+                <div class="tab-pane" style="display: none;">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>类型</th>
+                            <th>详细描述</th>
+                            <th>日期</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>过滤日志1</td>
+                            <td>trace</td>
+                            <td>操作日志的详细描述，如果出现多文字可以进行换行显示</td>
+                            <td>2016/09/11  13:11:22</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--流量日志tab内容-->
+                <div class="tab-pane" style="display: none;">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>类型</th>
+                            <th>详细描述</th>
+                            <th>日期</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>流量日志1</td>
+                            <td>trace</td>
+                            <td>操作日志的详细描述，如果出现多文字可以进行换行显示</td>
+                            <td>2016/09/11  13:11:22</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--规则命中日志tab内容-->
+                <div class="tab-pane" style="display: none;">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>类型</th>
+                            <th>详细描述</th>
+                            <th>日期</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>规则命中日志1</td>
+                            <td>trace</td>
+                            <td>操作日志的详细描述，如果出现多文字可以进行换行显示</td>
+                            <td>2016/09/11  13:11:22</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="kkpager"></div>
+
+        </div>
+    </div>
+    <script src="js/framework/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        $(document).ready(function(){
+
+        });
+    </script>
+</body>
+</html>

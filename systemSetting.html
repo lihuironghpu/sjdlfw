@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据代理服务</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+<!--系统配置-->
+
+<!--左侧菜单区域-->
+<div id="leftMenu" class="left_container"></div>
+<!--右侧头部和内容显示区域-->
+<div class="right_container">
+    <!--头部用户名退出区域-->
+    <div id="header" class="header"></div>
+    <!--内容显示区域-->
+    <div class="main_container">
+        <!--路径导航-->
+        <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Library</a></li>
+            <li class="active">Data</li>
+        </ol>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs">
+            <li class="active"><a>网卡管理</a></li>
+            <li><a>状态查看</a></li>
+            <li><a>账号管理</a></li>
+            <li><a>配置文件管理及升级</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <!--网卡管理tab内容-->
+            <div class="tab-pane">
+                <div>
+                    <a class="btn btn_primary">新增</a>
+                </div>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>网卡名称</th>
+                        <th>网卡选择</th>
+                        <th>网卡用途</th>
+                        <th>IP地址</th>
+                        <th>子网掩码</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>前置服务器专用网卡</td>
+                        <td> 网卡1</td>
+                        <td>出包网卡</td>
+                        <td>192.168.2.11</td>
+                        <td>255.255.255.0</td>
+                        <td>正常</td>
+                        <td>
+                            <a class="btn_link btn_edit">编辑</a>
+                            <a class="btn_link btn_del">删除</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div id="kkpager"></div>
+            </div>
+            <!--状态查看tab内容-->
+            <div class="tab-pane" style="display: none;">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">网络状态查看</h3>
+                    </div>
+                    <div class="panel-body">
+                        状态详情
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">服务状态</h3>
+                    </div>
+                    <div class="panel-body">
+                        服务状态
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">系统状态</h3>
+                    </div>
+                    <div class="panel-body">
+                        系统状态
+                    </div>
+                </div>
+            </div>
+            <!--账号管理tab内容-->
+            <div class="tab-pane">
+               修改用户名密码
+            </div>
+            <!--配置文件管理及版本tab内容-->
+            <div class="tab-pane">
+                导入导出配置文件
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/framework/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+    $(document).ready(function(){
+
+    });
+</script>
+</body>
+</html>

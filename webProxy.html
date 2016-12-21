@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据代理服务</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+<!--web代理-->
+
+<!--左侧菜单区域-->
+<div id="leftMenu" class="left_container"></div>
+<!--右侧头部和内容显示区域-->
+<div class="right_container">
+    <!--头部用户名退出区域-->
+    <div id="header" class="header"></div>
+    <!--内容显示区域 iframe-->
+    <div class="main_container">
+
+        <!--路径导航-->
+        <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Library</a></li>
+            <li class="active">Data</li>
+        </ol>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs">
+            <li class="active"><a>规则代理</a></li>
+            <li><a>URL过滤</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <!--规则代理tab内容-->
+            <div class="tab-pane">
+                <div>
+                    <a class="btn btn_primary">新增</a>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>名称</th>
+                            <th>实时流量</th>
+                            <th>代理方式</th>
+                            <th>状态</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>B/S反向代理1</td>
+                            <td>
+                                <span class="download">331,003kb</span>
+                                <span class="upload">1,003kb</span>
+                            </td>
+                            <td>反向代理</td>
+                            <td>
+                                <div class="switch_btn">
+                                    开关
+                                </div>
+                            </td>
+                            <td>
+                                <a class="btn_link btn_edit">编辑</a>
+                                <a class="btn_link btn_del">删除</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane" style="display: none;">
+                <div>
+                    <div class="search_group">
+                        <input type="text">
+                        <a class="btn btn_primary">搜索</a>
+                    </div>
+                    <a class="btn btn_primary">新增</a>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>名称</th>
+                            <th>URL条数</th>
+                            <th>累计拦截数</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>娱乐类过滤</td>
+                            <td>8</td>
+                            <td>1333</td>
+                            <td>
+                                <a class="btn_link btn_edit">编辑</a>
+                                <a class="btn_link btn_del">删除</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="kkpager"></div>
+
+
+    </div>
+</div>
+<script src="js/framework/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/validate.js"></script>
+
+<script src="js/plugin/kkpager.min.js"></script>
+<script>
+    $(document).ready(function(){
+    });
+</script>
+</body>
+</html>
